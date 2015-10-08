@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <bitmap android:src="@mipmap/ic_arrow_back_white_24dp"/>
+    </item>
+
+    <item android:state_pressed="true">
+        <bitmap android:src="@mipmap/ic_arrow_back_grey600_24dp"/>
+    </item>
+
+</selector>

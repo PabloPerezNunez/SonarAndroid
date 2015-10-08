@@ -1,0 +1,148 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detalllesLayout"
+    android:weightSum="1"
+    android:columnCount="1"
+    android:background="#be000000">
+
+    <!--<include layout="@layout/reproductor_mini"-->
+        <!--android:id="@+id/include" />-->
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/degradado"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignLeft="@+id/portada"
+        android:layout_alignStart="@+id/portada"
+        android:layout_alignRight="@+id/portada"
+        android:layout_alignEnd="@+id/portada" />
+
+    <ImageView
+
+        android:transitionName="sharedportada"
+        android:id="@+id/portada"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:focusable="false"
+        android:layout_gravity="center_horizontal"
+        android:elevation="@dimen/appbar_elevation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/portada"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#fff0f0f0"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:transitionName="sharedtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txtNombreCancion"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff373737"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:textSize="25dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:autoText="false" />
+
+        <TextView
+            android:transitionName="sharedartist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txtNombreArtista"
+            android:textColor="#ff747474"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_alignStart="@+id/txtNombreCancion"
+            android:layout_below="@+id/txtNombreCancion"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:layout_gravity="center_horizontal|top" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff373737"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:id="@+id/txtDuracion"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffc2c2c2" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ff5c5c5c" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="100 bpm"
+                android:id="@+id/txtCalidad"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffc2c2c2" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descargar"
+            android:id="@+id/btnDescarga"
+            android:background="#ff373737"
+            android:layout_margin="10dp"
+            android:textColor="#ffc2c2c2" />
+    </LinearLayout>
+
+
+</RelativeLayout>

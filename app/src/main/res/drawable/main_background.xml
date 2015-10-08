@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap
+    android:src="@mipmap/back"
+    android:tileMode="repeat"
+    android:dither="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+

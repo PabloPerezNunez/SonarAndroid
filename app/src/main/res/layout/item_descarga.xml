@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/descarga"
+    android:clickable="false"
+    android:id="@+id/rel">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_height="20dp"
+        android:id="@+id/progress"
+        android:singleLine="true"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#798795"
+        android:layout_toRightOf="@+id/icono"
+        android:layout_toEndOf="@+id/icono" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre"
+        android:id="@+id/txtNombre"
+        android:textColor="#ffe7e7e7"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:autoText="false"
+        android:gravity="center_vertical"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/icono"
+        android:layout_toEndOf="@+id/icono" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icono"
+        android:src="@mipmap/ic_file_download_white_24dp"
+        android:layout_alignTop="@+id/txtNombre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignBottom="@+id/progress" />
+
+</RelativeLayout>

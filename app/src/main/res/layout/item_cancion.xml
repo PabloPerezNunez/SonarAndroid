@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:rowCount="3"
+    android:columnCount="3"
+    android:clickable="false"
+    android:id="@+id/rel">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:layout_toStartOf="@+id/btnOpciones"
+        android:id="@+id/linearLayout"
+        android:layout_toLeftOf="@+id/btnOpciones">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nombre"
+            android:id="@+id/txtNombre"
+            android:textColor="#fff5f5f5"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/txtDuracion"
+            android:layout_toStartOf="@+id/txtDuracion" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtArtista"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:textColor="#ff9b9b9b"
+            android:layout_below="@+id/textView6"
+            android:layout_marginBottom="6dp"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_toStartOf="@+id/txtDuracion"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/btnOpciones"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#00f0f0f0"
+        android:src="@mipmap/ic_expand_more_grey600_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

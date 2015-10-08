@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sönar</string>
+
+    <string name="daidalos_hello">Hello World!</string>
+    <string name="daidalos_app_name">AFileDialog</string>
+    <color name="daidalos_gray">#888</color>
+    <string name="daidalos_select">Seleccionar</string>
+    <string name="daidalos_cancel">Cancelar</string>
+    <string name="daidalos_ok">Aceptar</string>
+    <string name="daidalos_new_file">Nuevo</string>
+    <string name="daidalos_create_file">Crear archivo</string>
+    <string name="daidalos_create_folder">Crear carpeta</string>
+    <string name="daidalos_accept">Aceptar</string>
+    <string name="daidalos_enter_file_name">Ingrese el nombre del archivo que desea crear</string>
+    <string name="daidalos_enter_folder_name">Ingrese el nombre de la carpeta que desea crear</string>
+    <string name="daidalos_yes">Si</string>
+    <string name="daidalos_no">No</string>
+    <string name="daidalos_confirm_select_file">¿Está seguro que desea seleccionar el archivo \'$file_name\'?</string>
+    <string name="daidalos_confirm_create_file">El archivo \'$file_name\' no existe, ¿está seguro de que desea crearlo?</string>
+    <string name="daidalos_confirm_select_folder">¿Está seguro que desea seleccionar la carpeta \'$file_name\'?</string>
+    <string name="daidalos_confirm_create_folder">La carpeta \'$file_name\' no existe, ¿está seguro de que desea crearla?</string>
+    <color name="daidalos_backgroud">#000</color>
+    <color name="daidalos_active_file">#fff</color>
+    <color name="daidalos_inactive_file">#888</color>
+
+    <string name="hint_busqueda">Artista, canción ...</string>
+    <string name="descarga_wifi">Solo se permite la descarga con Wi-Fi.</string>
+    <string name="fin_descarga">Descarga finalizada.</string>
+    <string name="no_resultados">No se han encontrado resultados.</string>
+    <string name="descarga_eliminada">Descarga eliminada.</string>
+
+    <string name="set_datos">Consumo de datos</string>
+    <string name="set_almacenamiento">Almacenamiento</string>
+    <string name="set_historial">Historial</string>
+
+
+    <string name="set_rep_wifi">Reproducción solo con Wi-Fi</string>
+    <string name="set_im_wifi">Imagenes solo con Wi-Fi</string>
+    <string name="set_des_wifi">Descargar solo con Wi-Fi</string>
+    <string name="set_rep_wifi_det">Reproducir audio solo cuando exista conexión WIFI.</string>
+    <string name="set_im_wifi_det">Descarga de imagenes solo cuando exista conexión WIFI.</string>
+    <string name="set_des_wifi_det">Permite la descarga solo cuando exista conexión WIFI.</string>
+    <string name="set_car_des">Carpeta de descarga</string>
+    <string name="set_car_aviso">No funcionan carpetas de la tarjeta de memoria</string>
+    <string name="aviso">AVISO</string>
+    <string name="eliminar_historial_busquedas">Limpiar historial de busquedas</string>
+    <string name="eliminar_historial_canciones">Limpiar historial de canciones</string>
+    <string name="eliminar_historial_busquedas_desc">Elimina todas las busquedas realizadas en el buscardor de canciones</string>
+    <string name="eliminar_historial_canciones_desc">Elimina todas las canciones almacenadas en el historial</string>
+    <string name="error_descarga">Error al descargar:\nComprueba tu conexión a internet.</string>
+    <string name="title_activity_descargas">Descargas</string>
+    <string name="title_activity_historial">Historial</string>
+    <string name="title_activity_detalles">Detalles</string>
+
+
+</resources>

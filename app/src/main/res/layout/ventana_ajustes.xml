@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    tools:context="ppn.com.mp3down.Ajustes"
+    android:background="#ff5a5a5a">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Austes"
+        android:padding="16dp"
+        android:background="#1abc9c"
+        android:textColor="#fffafafa"
+        android:drawableLeft="@mipmap/ic_arrow_back_black_24dp"
+        android:drawableRight="@mipmap/ic_file_download_white_24dp"
+        android:gravity="center"
+        android:id="@+id/txtDescargas"
+        android:layout_margin="5dp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="false"
+        android:id="@+id/descargas_scroll"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/txtDescargas"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:animateLayoutChanges="true"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:id="@+id/list" />
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:adjustViewBounds="false"
+        android:background="#00000000"
+        android:id="@+id/descargas_back"
+        android:focusableInTouchMode="false"
+        android:layout_margin="5dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="17dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="17dp" />
+
+</RelativeLayout>

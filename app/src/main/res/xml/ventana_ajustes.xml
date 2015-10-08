@@ -1,0 +1,51 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/set_datos">
+        <CheckBoxPreference
+            android:key="play_wifi"
+            android:title="@string/set_rep_wifi"
+            android:summary="@string/set_rep_wifi_det"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="imagenes_wifi"
+            android:title="@string/set_im_wifi"
+            android:summary="@string/set_im_wifi_det"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="descarga_wifi"
+            android:title="@string/set_des_wifi"
+            android:summary="@string/set_des_wifi_det"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/set_almacenamiento">
+        <Preference
+            android:title="@string/aviso"
+            android:summary="@string/set_car_aviso"
+            android:selectable="false"
+            android:enabled="false"/>
+
+        <Preference
+            android:key="carpeta_descarga"
+            android:title="@string/set_car_des"
+            />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/set_historial">
+        <Preference
+            android:key="eliminar_historial_busquedas"
+            android:title="@string/eliminar_historial_busquedas"
+            android:summary="@string/eliminar_historial_busquedas_desc"
+/>
+        <Preference
+            android:key="eliminar_historial_canciones"
+            android:title="@string/eliminar_historial_canciones"
+            android:summary="@string/eliminar_historial_canciones_desc"
+/>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

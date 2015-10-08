@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Sönar</string>
+
+    <string name="daidalos_hello">Hello World!</string>
+    <string name="daidalos_app_name">AFileDialog</string>
+    <color name="daidalos_gray">#888</color>
+    <string name="daidalos_select">Select</string>
+    <string name="daidalos_cancel">Cancel</string>
+    <string name="daidalos_ok">Acept</string>
+    <string name="daidalos_new_file">New</string>
+    <string name="daidalos_create_file">New file</string>
+    <string name="daidalos_create_folder">New folder</string>
+    <string name="daidalos_accept">Acept</string>
+    <string name="daidalos_enter_file_name">Insert the name of the new file</string>
+    <string name="daidalos_enter_folder_name">Insert the name of the new folder</string>
+    <string name="daidalos_yes">Yes</string>
+    <string name="daidalos_no">No</string>
+    <string name="daidalos_confirm_select_file">Do you want to select the file \'$file_name\'?</string>
+    <string name="daidalos_confirm_create_file">The file \'$file_name\' doesn\'t exist, Do you want create it?</string>
+    <string name="daidalos_confirm_select_folder">Do you want select the folder\'$file_name\'?</string>
+    <string name="daidalos_confirm_create_folder">The folder \'$file_name\' doesn\'t exist, Do you want create it?</string>
+    <color name="daidalos_backgroud">#000</color>
+    <color name="daidalos_active_file">#fff</color>
+    <color name="daidalos_inactive_file">#888</color>
+
+    <string name="hint_busqueda">Artist, song ...</string>
+    <string name="descarga_wifi">You can only download with Wi-Fi connection.</string>
+    <string name="fin_descarga">Download complete.</string>
+    <string name="no_resultados">No results.</string>
+    <string name="descarga_eliminada">Download deleted.</string>
+
+    <string name="set_datos">Data consumption</string>
+    <string name="set_almacenamiento">Storage</string>
+    <string name="set_historial">History</string>
+
+
+    <string name="set_rep_wifi">Play only with Wi-Fi</string>
+    <string name="set_im_wifi">Images only with Wi-Fi</string>
+    <string name="set_des_wifi">Download only with Wi-Fi</string>
+    <string name="set_rep_wifi_det">Allow to play the songs only with a Wi-Fi connection.</string>
+    <string name="set_im_wifi_det">Allow to download images only with a Wi-Fi connection.</string>
+    <string name="set_des_wifi_det">Allow to download the songs only with a Wi-Fi connection.</string>
+    <string name="set_car_des">Donwload folder</string>
+    <string name="set_car_aviso">The memory card folders doesn\'t work.</string>
+    <string name="aviso">WARNING</string>
+    <string name="eliminar_historial_busquedas">Clean searches history</string>
+    <string name="eliminar_historial_canciones">Clean songs hystory</string>
+    <string name="eliminar_historial_busquedas_desc">Remove all the searches made in the songs searcher</string>
+    <string name="eliminar_historial_canciones_desc">Remove all the songs saved in the history</string>
+    <string name="error_descarga">Error downloading:\nCheck your internet connection.</string>
+
+    <string name="title_activity_historial">History</string>
+    <string name="title_activity_descargas">Download</string>
+    <string name="title_activity_detalles">Details</string>
+
+
+</resources>

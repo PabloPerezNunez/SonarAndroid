@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#ff373737"
+    >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/portada"
+        android:transitionName="sharedportada"
+        android:src="@mipmap/vinyl"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/portada"
+        android:layout_toStartOf="@+id/btnPlay"
+        android:layout_toLeftOf="@+id/btnPlay"
+        android:id="@+id/linearLayout3"
+        android:gravity="left|center_vertical">
+
+        <TextView
+            android:transitionName="sharedtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo de la cancion"
+            android:id="@+id/txtTitulo"
+            android:textColor="#fff5f5f5"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:gravity="left" />
+
+        <TextView
+            android:transitionName="sharedartist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Artista de la cancion"
+            android:id="@+id/txtArtista"
+            android:textColor="#ff9b9b9b"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:gravity="left" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/progresoCancion"
+        android:progressDrawable="@drawable/progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+
+        android:layout_alignParentBottom="false"
+        android:layout_toRightOf="@+id/portada"
+        android:layout_toLeftOf="@+id/btnPlay"
+        android:layout_toStartOf="@+id/btnPlay"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/btnPlay"
+        android:background="#00a3a3a3"
+        android:src="@mipmap/ic_play_arrow_grey600_24dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/progresoCancion" />
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/progresoBuffer"
+        android:max="100"
+        android:maxHeight="2dp"
+        android:progress="0"
+        android:layout_gravity="top"
+        android:progressTint="#ff18ad35"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnPlay"
+        android:layout_alignEnd="@+id/btnPlay"
+        android:layout_toRightOf="@+id/linearLayout3"
+        android:layout_toEndOf="@+id/linearLayout3"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

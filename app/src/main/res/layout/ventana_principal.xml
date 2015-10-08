@@ -1,0 +1,131 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:padding="0dp"
+                android:gravity="bottom"
+                android:id="@+id/slideLayout"
+                android:orientation="vertical"
+                android:focusable="false">
+
+
+                <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/colorTema1">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/layoutBarraBusqueda"
+                        android:background="@color/colorTema2">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnSettings"
+                            android:longClickable="false"
+                            android:background="#00000000"
+                            android:padding="5dp"
+                            android:src="@drawable/btn_settings"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignBottom="@+id/txtBuscar"
+                            android:layout_alignTop="@+id/txtBuscar"
+                            android:layout_marginLeft="5dp" />
+
+                        <AutoCompleteTextView
+                            android:imeOptions="actionSearch"
+                            android:inputType="textNoSuggestions"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtBuscar"
+                            android:layout_weight="1"
+                            android:hint="@string/hint_busqueda"
+                            android:textColorHint="#ff6e6e6e"
+                            android:textColor="#fff5f5f5"
+                            android:minLines="1"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:padding="12dp"
+                            android:layout_width="wrap_content"
+                            android:background="#00000000"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toLeftOf="@+id/btnClear"
+                            android:layout_toEndOf="@+id/btnSettings"
+                            android:layout_toRightOf="@+id/btnSettings" />
+
+                        <ImageButton
+                            android:src="@drawable/btn_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnClear"
+                            android:longClickable="false"
+                            android:background="#00000000"
+                            android:padding="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_alignTop="@+id/txtBuscar"
+                            android:layout_alignBottom="@+id/txtBuscar"
+                            android:visibility="invisible" />
+
+                    </RelativeLayout>
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:background="@color/colorTema1"
+
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/swipe_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutBarraBusqueda"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_above="@+id/miniPlayer">
+
+                        <ListView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/listaNueva"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/layoutBarraBusqueda"
+                            android:layout_marginTop="1dp"
+                            android:divider="@drawable/divider" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                <gui.ReproductorMini
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/reproductor"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentBottom="true">
+
+                </gui.ReproductorMini>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        <include layout="@layout/menu"/>
+
+
+</android.support.v4.widget.DrawerLayout>
